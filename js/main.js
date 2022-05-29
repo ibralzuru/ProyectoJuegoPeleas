@@ -88,8 +88,8 @@ const game = () => {
   if (jugador1.life <= 0) {
   shiftScreen(3)
   contenedor3.innerHTML = `<h1>Stephen Curry!</h1>
-  <img src="../img/curryW.jpeg" alt="">
-  <img src="../img/jordanC.jpeg">`; 
+  <img src="./img/curryW.jpeg" alt="">
+  <img src="./img/jordanC.jpeg">`; 
   /* contenedor3.innerHTML = `<img src="../img/curryW.jpeg" alt="">`;
   contenedor4.innerHTML = `<img src="../img/jordanC.jpeg" alt="">`; */
   
@@ -98,7 +98,7 @@ const game = () => {
   if (jugador2.life <= 0) {
   
   shiftScreen(3)
-  contenedor3.innerHTML = `<h1>Michael Jordan!</h1><img src="../img/curryC4.jpeg" alt=""><img src="../img/jordanW.jpeg" alt="">`; 
+  contenedor3.innerHTML = `<h1>Michael Jordan!</h1><img src="./img/curryC4.jpeg" alt=""><img src="./img/jordanW.jpeg" alt="">`; 
   /* contenedor3.innerHTML = `<img src="../img/curryC4.jpeg" alt="">`; 
   contenedor4.innerHTML = `<img src="../img/jordanW.jpeg" alt="">`; */
   } 
