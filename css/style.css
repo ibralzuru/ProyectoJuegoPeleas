@@ -159,11 +159,12 @@ body {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    height: 70%;
+    height: 90%;
 
 }
 
 #contenedor3 h1 {
+    padding-top: 2em;
     font-size: 4em;
     color: #adf06b;
     font-family: 'Bebas Neue', cursive;
