@@ -10,6 +10,8 @@ _Se puede ver en cualquier navegador web._
 
 _Solo tienes que hacer click en el siguiente link....._
 
+https://ibralzuru.github.io/ProyectoJuegoPeleas/
+
 
 ***
 ### Pruebas ⚙️
