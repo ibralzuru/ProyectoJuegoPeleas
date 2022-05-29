@@ -80,10 +80,7 @@ body {
     cursor: pointer;
 }
 
-#ganador1 h1, #ganador2 h1 {
-    color: aqua;
-    font-size: 2em;
-}
+
 
 #pantalla2 {
     background-image: url(../img/fondo6.jpg);
@@ -95,11 +92,11 @@ body {
 
 .contenedor2 {
     width: 100%;
-    height: 27em;
+    height: 25em;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 10em;
+    padding-top: 5em;
 
 }
 
