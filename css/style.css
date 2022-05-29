@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.transit {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PANTALLA 1 --------------------------------------- */
+#pantalla1 {
+    background-image: url(../img/fondo4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+#gif-continer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#gif-continer img {
+    cursor: pointer;
+}
+
+
+
+/* PANTALLA 2 --------------------------------------- */
+#caja-boton {
+    height: 10em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4em;
+
+}
+
+.parte-superior {
+    width: 33%;
+    text-align: center;
+}
+
+
+#boton-fight {
+    height: 4em;
+    width: 10em;
+    background-color: red;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    font-size: 1.6em;
+    box-shadow: 1px 10px 15px 1px black;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#boton-fight:hover {
+    height: 3.9em;
+    width: 10em;
+    background-color: rgb(134, 5, 5);
+    color: greenyellow;
+    font-size: 1.5em;
+    box-shadow: 1px 10px 15px 1px black;
+    cursor: pointer;
+}
+
+#ganador1 h1, #ganador2 h1 {
+    color: aqua;
+    font-size: 2em;
+}
+
+#pantalla2 {
+    background-image: url(../img/fondo6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenedor2 {
+    width: 100%;
+    height: 27em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10em;
+
+}
+
+.players {
+
+    padding: 2em;
+    margin: 1em;
+}
+
+#player1 {
+    width: 20em;
+    height: 24em;
+    margin: 1em;
+
+}
+
+#player1 img {
+    width: 14em;
+    height: 21em;
+    margin: 3em;
+
+}
+
+#player2 {
+    width: 26em;
+    height: 24em;
+
+}
+
+#player2 img {
+    width: 34em;
+    height: 26em;
+    margin: -1em;
+}
+
+
+/* PANTALLA 3 */
+
+
+
+#pantalla3 {
+    background-image: url(../img/win1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; */
+
+
+
+
+#contenedor3 {
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+
+}
+
+#contenedor3 h1 {
+    font-size: 4em;
+    color: #adf06b;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+/* #contenedor3 img{
+    height: 10em;
+    width: 10em;
+}
+ */
+
+/* --------BARRAS DE VIDA---------------- */
+#barras_vidas {
+    height: 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 4em;
+}
+
+.barra-vida {
+    display: flex;
+    height: 1em;
+    border-radius: 0.5em;
+    width: 9em;
+    border: 0.2em solid yellow;
+    background-color: black;
+}
+
+.barra-vida-interna {
+    display: flex;
+    position: relative;
+    background: greenyellow;
+    height: 1em;
+    width: 9em;
+    transition: width 0.6s;
+
+}

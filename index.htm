@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan vs Curry </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <!-- ---------------PANTALLA 1------------------ -->
+    <section class="transit" id="pantalla1" onclick="shiftScreen(2)">
+        <div id="contenedor1">
+            <div id="gif-continer">
+                <img src="../img/logo1.gif" alt="gif-jordan-curry">
+                <img src="../img/start.gif" alt="gift-start">
+            </div>
+        </div>
+    </section>
+
+    <section class="transit" id="pantalla2" style="display:none">
+        <div id="cajon13">
+            <div id="caja-boton">
+                <div class="parte-superior" id="ganador2"></div>
+                <div class="parte-superior" id="boton-fight" onclick="game()">Fight</div>
+                <div class="parte-superior" id="ganador1"></div>
+            </div>
+
+            <!-- ---------------PANTALLA 2------------------ -->
+            <div class="contenedor2">
+
+                <div class="players" id="player2">
+
+                    <img src="./img/jordan3.png" alt="">
+                </div>
+
+                <div class="players" id="player1">
+
+                    <img src="./img/curry.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div id="barras_vidas">
+            <div id="barraVida1">
+                <div class="barra-vida-interna" id="power1"></div>
+            </div>
+            <div id="barraVidas2">
+                <div class="barra-vida-interna" id="power2"> </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------  PANTALLA 3 -------------------->
+    <section class="transit" id="pantalla3" style="display:none">
+        <div id="contenedor3">
+        </div>
+    </section>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
