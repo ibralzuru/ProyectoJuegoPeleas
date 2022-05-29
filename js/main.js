@@ -71,34 +71,38 @@ const game = () => {
 
   jugador1.atack();
   jugador2.atack();
-
-
-
-  if (jugador1.life <= 0) {
-
-    shiftScreen(3)
-    contenedor3.innerHTML = `<h1>Stephen Curry!</h1>`;
-    /*   contenedor3.innerHTML = `<img src="../img/curryW.jpeg" alt="">`;
-      contenedor4.innerHTML = `<img src="../img/jordanC.jpeg" alt="">`;  */
-
-
+  if (jugador1.life < 0) {
+  jugador1.life = 0;
   }
-  if (jugador2.life <= 0) {
-
-    shiftScreen(3)
-    contenedor3.innerHTML = `<h1>Michael Jordan!</h1>`;
-    /*  contenedor3.innerHTML = `<img src="../img/curryC4.jpeg" alt="">`; 
-     contenedor4.innerHTML = `<img src="../img/jordanW.jpeg" alt="">`; */
+  if (jugador2.life < 0) {
+  jugador2.life = 0;
   }
-
+  
+  
   power1.innerHTML = `<div class="barra-vida-interna"><div id="power1"></div>`;
   power2.innerHTML = `<div class="barra-vida-interna"><div id="power2"></div>`;
   document.getElementById("power1").style.width = `${jugador1.life}` + "%";
   document.getElementById("power2").style.width = `${jugador2.life}` + "%";
-}
-
-
-
+  
+  
+  if (jugador1.life <= 0) {
+  shiftScreen(3)
+  contenedor3.innerHTML = `<h1>Stephen Curry!</h1>
+  <img src="../img/curryW.jpeg" alt="">
+  <img src="../img/jordanC.jpeg">`; 
+  /* contenedor3.innerHTML = `<img src="../img/curryW.jpeg" alt="">`;
+  contenedor4.innerHTML = `<img src="../img/jordanC.jpeg" alt="">`; */
+  
+  
+  }
+  if (jugador2.life <= 0) {
+  
+  shiftScreen(3)
+  contenedor3.innerHTML = `<h1>Michael Jordan!</h1><img src="../img/curryC4.jpeg" alt=""><img src="../img/jordanW.jpeg" alt="">`; 
+  /* contenedor3.innerHTML = `<img src="../img/curryC4.jpeg" alt="">`; 
+  contenedor4.innerHTML = `<img src="../img/jordanW.jpeg" alt="">`; */
+  } 
+  }
 
 
 

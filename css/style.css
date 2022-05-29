@@ -158,8 +158,8 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-    align-items: center;
-    height: 60%;
+    flex-direction: column;
+    height: 70%;
 
 }
 
@@ -170,11 +170,12 @@ body {
 
 }
 
-/* #contenedor3 img{
-    height: 10em;
-    width: 10em;
+ #contenedor3 img{
+    height: 20em;
+    width: 20em;
+    padding: 0em 0em 1em 4em;
 }
- */
+ 
 
 /* --------BARRAS DE VIDA---------------- */
 #barras_vidas {
